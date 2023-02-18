@@ -1,0 +1,62 @@
+name: Multi-purpose issue template example
+description: Description goes here
+assignees:
+  - test
+body:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What type of issue are you creating?
+      description: Is this an Epic / User Story / Task / ?
+      multiple: false
+      options:
+        - Epic
+        - User story
+        - Task
+        - Bug
+    validations:
+      required: true
+  - type: input
+    id: issue-link
+    attributes:
+      label: Epic Link
+      description: "What is the driving force behind this issue? Link to it (e.g., if an epic, link it)."
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: "What are the high-level goals that should be accomplished/addressed via closing this issue?"
+      value: |
+        1. Example 1
+        2. Example 2
+        3. Example 3
+        ...
+        render: bash
+    validations:
+      required: true
+  - type: checkboxes
+    id: did-you
+    attributes:
+      label: Did you remember to...?
+      description: Did you remember to do these things?
+      options:
+        - label: Coordinate with PM...
+        - label: Coordinate with relevant non-dev stakeholders?
+        - label: Etc
+## Epic Link
+
+## Requirements
+
+## User Story
+
+## Acceptance Criteria
+
+## Technical/Implementation Details
+
+## Out of Scope
+
+## Deployment/Release Plan
+
+## Dependencies
