@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Link to documentation for X
+    url: https://github.com/
+    about: This is what the link is used for.
+  - name: Another link to another location.
+    url: https://github.com
+    about: More info/resources that may be useful for creating the issue (possibly specific resources depending on type)
