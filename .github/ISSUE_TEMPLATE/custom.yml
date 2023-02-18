@@ -16,13 +16,12 @@ body:
         - Bug
     validations:
       required: true
-  - type: input
-    id: issue-link
+  - type: textarea
+    id: requirements
     attributes:
-      label: Epic Link
-      description: "What is the driving force behind this issue? Link to it (e.g., if an epic, link it)."
-    validations:
-      required: true
+      label: Requirements
+      description: "What are the high-level goals that should be accomplished/addressed via closing this issue?"
+      value: Use '# to link to the issue/epic/PR/etc that is key driver of this issue.
   - type: textarea
     id: requirements
     attributes:
@@ -30,10 +29,6 @@ body:
       description: "What are the high-level goals that should be accomplished/addressed via closing this issue?"
       value: |
         1. Example 1
-        2. Example 2
-        3. Example 3
-        ...
-        render: bash
     validations:
       required: true
   - type: checkboxes
@@ -45,6 +40,28 @@ body:
         - label: Coordinate with PM...
         - label: Coordinate with relevant non-dev stakeholders?
         - label: Etc
+  - type: textarea
+    id: user-stories
+    attributes:
+      label: User stories
+      description: Who are the users impacted/driving this issue and what are their needs/requirements?
+      value: |
+        > “As a [persona], I [want to], [so that].”
+
+        1. "As a [persona]": Who are we building this for? 
+        “Wants to”: Here we’re describing their intent — not the features they use. 
+        “So that”: What will this enable the user to do/how will it help enable *their* needs?
+            validations:
+              required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes: |
+      These should stem from the user storeies and explains the things that will be `true` upon successful resolution of this issue.
+      
+      While not required, it may be helpful to use a `textarea` form element. 
+      
+      - [ ] 
+  
 ## Epic Link
 
 ## Requirements
