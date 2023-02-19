@@ -1,32 +1,27 @@
 name: Issue template
 description: Description goes here
-labels: ["needs_grooming", "needs_info", "backlog"]
 assignees:
   - tbusillo
 body:
   - type: dropdown
     id: issue-type
     attributes:
-      label: >> What type of issue are you creating? <<
-      description: Is this an Epic / User Story / Task / ?
+      label: What type of issue are you creating?
+      description: "Is this an Epic / User Story / Task"
       multiple: false
       options:
         - Epic
         - User story
         - Task
-    validations:
-      required: true
   - type: dropdown
     id: priority
     attributes:
-      label: ">> What is the priority? <<"
+      label: What is the priority?
       multiple: false
       options:
         - 🔴 High
         - 🟡 Medium
         - 🔵 Low
-    validations:
-      required: true
   - type: textarea
     id: linked-driver
     attributes:
@@ -55,8 +50,6 @@ body:
         2. “Wants to”: Here we’re describing their intent — not the features they use. 
 
         3. “So that”: What will this enable the user to do/how will it help enable *their* needs?
-    validations:
-      required: true
   - type: textarea
     id: acceptance-criteria
     attributes:
