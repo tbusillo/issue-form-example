@@ -6,7 +6,7 @@ body:
   - type: dropdown
     id: issue-type
     attributes:
-      label: What type of issue are you creating?
+      label: ">>What type of issue are you creating?<<"
       description: "Is this an Epic / User Story / Task"
       multiple: false
       options:
