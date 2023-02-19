@@ -4,4 +4,4 @@
 
 ## Ideas for Future 
 
-    - Parse form and perform automated functions via [GH Action](https://github.com/peter-murray/issue-forms-body-parser).
+- Parse form and perform automated functions via [GH Action](https://github.com/peter-murray/issue-forms-body-parser).
