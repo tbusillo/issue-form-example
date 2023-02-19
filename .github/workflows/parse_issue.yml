@@ -27,7 +27,7 @@ jobs:
       - name: Issue Form Body Parser
         uses: peter-murray/issue-forms-body-parser@v3.0.0
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.github.token }}
           issue_id: ${{ inputs.issue_parse }}
           separator: '###'
           label_marker_start: '>>'
